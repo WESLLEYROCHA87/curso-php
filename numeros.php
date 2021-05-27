@@ -11,15 +11,15 @@
 		<small>Curso de Básico de PHP - Prof. Ivan Lourenço Gomes</small>
 
 
-
 		<h3>Operadores Aritméticos</h3>
 
 		<h4>Escreva a operação:</h4>
-			<p><?php  ?></p>
+			<p><?php echo 1987-2021  ;?></p>
 			<br>
 		
 		
 		<h3>Cálculo da Fatura</h3>
+
 
 		<?php	
 			// Informações da compra
@@ -27,9 +27,11 @@
 			$preco = 29.00;
 			$cod = "330745";
 
-			// Cálculo do total
-
+			// Cálculo do total			
+			$total = $quant * $preco;
 		?>
+
+		
 
 			<table>
 				<tr>
@@ -39,10 +41,10 @@
 					<th>Total</th>
 				</tr>
 				<tr>
-					<td><?php  ?></td>
-					<td><?php  ?></td>
-					<td><?php  ?></td>
-					<td><?php  ?></td>
+					<td><?php echo $cod;?></td>
+					<td><?php echo $quant;?></td>
+					<td><?php echo number_format($preco,2, ",", ".");?></td>
+					<td><?php echo number_format($total,2, ",", ".");?></td>
 				</tr>
 			</table>
 
@@ -54,15 +56,19 @@
 			?>
 
 			<h4>Arredondar:</h4>
-			<p><?php  ?></p>
+			<p><?php echo round($num1,3)  ?></p>
 			<br>
 
 			<h4>Arredondar para cima:</h4>
-			<p><?php  ?></p>
+			<p><?php echo ceil($num1);   ?></p>
 			<br>
 
 			<h4>Arredondar para baixo:</h4>
-			<p><?php  ?></p>
+			<p><?php echo floor($num1);  ?></p>
+			<br>
+
+			<h4>Raiz Quadrada:</h4>
+			<p><?php echo sqrt($num2);  ?></p>
 			<br>
 
 

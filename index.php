@@ -11,11 +11,7 @@
 		<hr>
 		<small>Curso de Básico de PHP - Prof. Ivan Lourenço Gomes</small>
 	
-	
-
-
-
-
+		<?php echo '</br>Meu Curso em PHP'; ?>
 
 	<?php include 'functions/bottom_index.php'; ?>
 

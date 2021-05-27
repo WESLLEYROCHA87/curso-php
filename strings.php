@@ -12,26 +12,26 @@
 
 		<h3>String é uma sequência de caracteres</h3>
 		
-			<?php $str = "Eu sou um string"; ?>
+			<?php $str = "Weslley Rocha"; ?>
 
 			<h4>Valor da variável:</h4>
-			<p></p>
+			<p><?php echo $str ;?></p>
 			<br>
 
 			<h4>Número de caracteres:</h4>
-			<p></p>
+			<p><?php echo strlen($str) ;?></p>
 			<br>
 
 			<h4>Primeiro caractere:</h4>
-			<p></p>
+			<p><?php echo $str[0] ;?></p>
 			<br>
 
 			<h4>Último caractere:</h4>
-			<p></p>
+			<p><?php echo $str[-1] ;?></p>
 			<br>
 
 			<h4>Como extrair parte de um string:</h4>
-			<p></p>
+			<p><?php echo substr($str, 0, 2) ;?></p>
 
 		<h3>Exemplo do IBAN - Trabalhando com Strings</h3>
 
@@ -42,19 +42,17 @@
 			?>
 
 			<h4>Número do IBAN:</h4>
-			<p></p>
+			<p><?php echo $iban ;?></p>
 			<br>
 
 
 			<h4>Código do País:</h4>
-			<p></p>
+			<p><?php echo substr($iban, 0, 4) ;?></p>
 			<br>
 
 			<h4>Número da conta:</h4>
-			<p></p>
+			<p><?php echo substr($iban, 4) . " (Stratus: " . $status . ")" ;?></p>
 			<br>
-
-
 
 
 		<h3>Como limpar strings</h3>
@@ -68,11 +66,11 @@
 			
 
 			<h4>Email:</h4>
-			<p class="pre"></p>
+			<p class="pre"><?php echo trim($email) ;?></p>
 			<br>
 
 			<h4>Site:</h4>
-			<a></a>
+			<a href="<?php echo $site ;?>"><?php echo trim($site, 'http://') ;?></a>
 			<br>
 
 
@@ -80,6 +78,17 @@
 
 			<p>Use este espaço para testar novas funções com strings.</p>
 			<br>
+
+			<?php $str = "Weslley Rocha"; echo count_chars($str,3);?>
+
+			<br>
+
+			<?php $number = 33;
+				$str = "Weslley Rocha";
+				$txt = sprintf("Meu nome é %s e tenho  %u anos de idade.",$str, $number);
+				echo $txt;
+			?>
+
 
 
 

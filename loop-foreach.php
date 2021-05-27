@@ -32,6 +32,18 @@
 									"titulo" => "Programe em Python",
 									"url" => "http://www.udemy.com",
 									"aval" => 90
+								),
+								array(
+									"n_alunos" => 111,
+									"titulo" => "Programe em Python",
+									"url" => "http://www.udemy.com",
+									"aval" => 90
+								),
+								array(
+									"n_alunos" => 222,
+									"titulo" => "Programe em Python",
+									"url" => "http://www.udemy.com",
+									"aval" => 90
 								)
 				); 
 			?>
@@ -39,7 +51,19 @@
 
 		<h3>Meus Cursos</h3>
 
-			
+		<ul>
+		
+			<?php foreach($cursos as $item) { ?>
+
+				<li>
+				 <a href="<?php echo $item['url']; ?>"> <?php echo $item['titulo'];?></a><br>
+					<?php echo $item['n_alunos'] . 'alunos' .  ' / ' . $item['aval'] . ' avaliações';?>
+				</li>
+				<br>
+
+			<?php } ?>
+
+		</ul>
 
 		<h3>Agora é a sua vez</h3>
 

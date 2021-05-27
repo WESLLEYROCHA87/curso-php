@@ -14,18 +14,23 @@
 		<h3>Função var_dump</h3>
 
 		<?php 
-			$nome = 'Ivan';
+			$nome = 'Weslley';
 			$saldo = 965.35; 
+			$saldo2 = 10;
 
 		?>
 
 		<h4>Tipo da variável $nome: </h4>
-		<p></p>
+		<p><?php var_dump($nome) ;?></p>
 
 		<br>
 
 		<h4>Tipo da variável $saldo: </h4>
-		<p></p>
+		<p><?php var_dump($saldo) ;?></p>
+		<br>
+		<p><?php var_dump($saldo2) ;?></p>
+
+
 		
 
 			
