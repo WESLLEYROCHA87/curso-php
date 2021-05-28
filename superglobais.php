@@ -16,11 +16,13 @@
 
 		<h3>$_SERVER</h3>
 
-		<p><?php ?></p>
+	
 
 
 
 		<h3>$GLOBALS</h3>
+
+		
 
 		<?php
 
@@ -29,7 +31,7 @@
 
 		?>
 
-		<p><?php ?></p>
+		<pre><?php echo ($GLOBALS['msg']); ?></pre>
 
 
 		
